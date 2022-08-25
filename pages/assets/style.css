@@ -1,0 +1,146 @@
+* {
+    margin: 5px;
+    padding: 5px;
+    border: 5px;
+    text-align: center;
+}
+  .container {
+    font-family: 'Jacques Francois', serif;
+  }
+  .header { grid-area: header;
+    display: grid; 
+background: linear-gradient(70deg, rgba(2, 70, 6, 0.92), rgb(61, 142, 112));
+font-size: 30px;
+border-style: double;
+}
+strong {
+    color: rgb(229, 219, 219);
+    font-family: 'Jacques Francois', serif;
+  }
+  .buscador { 
+    grid-area: buscador;
+    display: flexbox;
+    background: radial-gradient(rgb(61, 142, 112), rgb(138, 138, 198));
+border-style: double;
+}
+@keyframes button {
+    from {background-color: rgb(178,34,34)}
+    to {background-color: rgb(42, 4, 53);}
+
+}
+
+
+button {
+    background-color:rgb(178,34,34) ;
+    text-decoration:solid;
+     border-radius: 4px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    transition:ease-out 0.3s;
+    animation-name: button;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  margin-top: 6px;
+  transform: matrix(1, -0.3, 0, 1, 0, 0);
+    }
+
+.novedades  {
+    grid-area: novedades;
+    display: flexbox;
+    align-items: center;
+   background: radial-gradient(rgb(61, 142, 112), rgb(138, 138, 198));
+    border-style:double;
+
+}
+.contenido { grid-area: contenido;
+    justify-items: center;
+align-content: center;
+background-color: whitesmoke; }
+
+.col {
+
+    font-family: 'Jacques Francois', serif;
+} 
+body{
+background-color:whitesmoke;
+padding: 5px;
+border: 10px;
+display: inline-block;
+font-family: 'Jacques Francois', serif;
+font-size: medium;
+width: fit-content;
+height: fit-content;
+}
+ul li {
+    font-family: 'Jacques Francois', serif;
+    list-style-type: none;
+    display:inline-block
+}
+div {
+    align-items:center;
+}
+
+img {
+    width: fit-content;
+    background-color: whitesmoke;
+    border-image: 2px;    
+}
+
+.footer { grid-area: footer;
+    background-color:  rgba(82, 124, 109, 1);
+    font-family: 'Jacques Francois', serif;
+    border-style: double;
+}
+
+@media screen and (max-width:480px) {
+    img  {width: 400px; 
+    justify-content: center;} 
+    body {
+        display: flex;
+        justify-content: center;
+        width: fit-content;
+        justify-items: center;
+        justify-content: space-evenly;
+    }
+    .header {
+        display: grid;
+        width: fit-content;
+        height: fit-content;
+        flex-direction: column;
+        align-items:flex-start;
+        text-align: start;
+    }
+    .contenido {
+        display:flex ;
+        width: fit-content;
+        height: fit-content;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        text-align: justify;
+}
+.grid {
+display: grid;
+flex-direction: column;
+align-items:flex-start;
+width: fit-content;
+grid-auto-flow: column;
+
+}
+.novedades {
+    visibility: hidden;
+    
+}
+.buscador {
+    visibility: hidden;
+}
+.footer {
+    display: grid;
+        width: fit-content;
+        height: fit-content;
+        flex-direction: column;
+        align-items:flex-start;
+        text-align: start;
+    }
+}

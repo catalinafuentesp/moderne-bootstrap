@@ -4,6 +4,25 @@
     border: 5px;
     text-align: center;
 }
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 2fr 2fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow:row;
+    justify-items: stretch;
+    align-items: stretch;
+    viewport-fit: 100%;
+    grid-template-areas:
+    "header header header header"
+    "contenido contenido contenido buscador"
+    "contenido contenido contenido novedades"
+    "contenido contenido contenido none"
+    "contenido contenido contenido none"
+    "footer footer footer footer"
+}
+    
   .container {
     font-family: 'Jacques Francois', serif;
   }
@@ -22,6 +41,14 @@ strong {
     display: flexbox;
     background: radial-gradient(rgb(61, 142, 112), rgb(138, 138, 198));
 border-style: double;
+justify-content: center;
+align-items: center;
+
+}
+
+.navbar-light {
+    justify-content:center;
+    align-items: center;
 }
 @keyframes button {
     from {background-color: rgb(178,34,34)}

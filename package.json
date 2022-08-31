@@ -1,0 +1,30 @@
+{
+  "name": "sass-moderne",
+  "version": "1.0.0",
+  "description": "usando node y sass en moderne. ",
+  "main": "index.html",
+  "scripts": {
+    "build-css":"node-sass --include-path scss pages/assets/estilo.scss pages/assets/style.css", 
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/catalinafuentesp/sass-moderne.git"
+  },
+  "keywords": [
+    "npm",
+    "art",
+    "css",
+    "html"
+  ],
+  "author": "Catalina Fuentes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/catalinafuentesp/sass-moderne/issues"
+  },
+  "homepage": "https://github.com/catalinafuentesp/sass-moderne#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.19"
+  }
+}

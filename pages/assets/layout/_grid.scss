@@ -1,0 +1,23 @@
+* {
+    margin: 5px;
+    padding: 5px;
+    border: 5px;
+    text-align: center;
+}
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 2fr 2fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow:row;
+    justify-items: stretch;
+    align-items: stretch;
+    viewport-fit: 100%;
+    grid-template-areas:
+    "header header header header"
+    "contenido contenido contenido buscador"
+    "contenido contenido contenido novedades"
+    "contenido contenido contenido none"
+    "contenido contenido contenido none"
+    "footer footer footer footer"
+}

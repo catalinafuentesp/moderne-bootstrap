@@ -4,7 +4,7 @@
   "description": "usando node y sass en moderne. ",
   "main": "index.html",
   "scripts": {
-    "build-css":"node-sass --include-path scss pages/assets/estilo.scss pages/assets/style.css", 
+    "build-css": "node-sass --include-path scss pages/assets/estilo.scss pages/assets/style.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
   "repository": {

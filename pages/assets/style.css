@@ -13,7 +13,12 @@
   justify-items: stretch;
   align-items: stretch;
   viewport-fit: 100%;
-  grid-template-areas: "header header header header" "contenido contenido contenido buscador" "contenido contenido contenido novedades" "contenido contenido contenido none" "contenido contenido contenido none" "footer footer footer footer"; }
+  grid-template-areas: "header header header header"
+ "contenido contenido contenido buscador"
+ "contenido contenido contenido novedades"
+ "contenido contenido contenido none"
+ "contenido contenido contenido none"
+ "footer footer footer footer"; }
 
 @media screen and (max-width: 480px) {
   img {
@@ -111,6 +116,7 @@ img {
   border-style: double;
   justify-content: center;
   align-items: center; }
+  
   .buscador .navbar-light {
     justify-content: center;
     align-items: center; }

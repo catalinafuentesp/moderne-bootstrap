@@ -1,3 +1,4 @@
+@import "./variables/vars";
 @import "./layout/grid";
 @import "./layout/media";
 
@@ -6,14 +7,14 @@ body {
     padding: 5px;
     border: 10px;
     display: inline-block;
-    font-family: 'Jacques Francois', serif;
+    font-family: $FontMDRN;
     font-size: medium;
     width: fit-content;
     height: fit-content;
-}
+
 
 ul li {
-    font-family: 'Jacques Francois', serif;
+    font-family: $FontMDRN;
     list-style-type: none;
     display: inline-block
 }
@@ -26,16 +27,17 @@ img {
     width: fit-content;
     background-color: whitesmoke;
     border-image: 2px;
-}
+
+}}
 
 .container {
-    font-family: 'Jacques Francois', serif;
+    font-family: $FontMDRN;
 }
 
 .header {
     grid-area: header;
     display: grid;
-    background: linear-gradient(70deg, rgba(2, 70, 6, 0.92), rgb(61, 142, 112));
+    background: $gradiente2;
     font-size: 30px;
     border-style: double;
 }
@@ -44,7 +46,7 @@ img {
     grid-area: novedades;
     display: flexbox;
     align-items: center;
-    background: radial-gradient(rgb(61, 142, 112), rgb(138, 138, 198));
+    background: $gradiente1;
     border-style: double;
 
 }
@@ -60,7 +62,7 @@ img {
 .buscador {
     grid-area: buscador;
     display: flexbox;
-    background: radial-gradient(rgb(61, 142, 112), rgb(138, 138, 198));
+    background: $gradiente1;
     border-style: double;
     justify-content: center;
     align-items: center;
@@ -74,13 +76,13 @@ img {
 .footer {
     grid-area: footer;
     background-color: rgba(82, 124, 109, 1);
-    font-family: 'Jacques Francois', serif;
+    font-family: $FontMDRN;
     border-style: double;
 }
 
 strong {
     color: rgb(229, 219, 219);
-    font-family: 'Jacques Francois', serif;
+    font-family: $FontMDRN;
 }
 
 button {

@@ -1,0 +1,221 @@
+* {
+  margin: 5px;
+  padding: 5px;
+  border: 5px;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 2fr 2fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  justify-items: stretch;
+  align-items: stretch;
+  viewport-fit: 100%;
+  grid-template-areas: "header header header header" "contenido contenido contenido buscador" "contenido contenido contenido novedades" "contenido contenido contenido none" "contenido contenido contenido none" "footer footer footer footer";
+}
+
+.header {
+  grid-area: header;
+  display: grid;
+  background: linear-gradient(70deg, rgba(2, 70, 6, 0.92), rgb(61, 142, 112));
+  font-size: 30px;
+  border-style: double;
+}
+
+.cccaja-1 {
+  background-color: #72A0C1;
+}
+
+.cccaja-2 {
+  background-color: #72A0C1;
+}
+
+.cccaja-3 {
+  background-color: #72A0C1;
+}
+
+.cccaja-4 {
+  background-color: #72A0C1;
+}
+
+.cccaja-5 {
+  background-color: #72A0C1;
+}
+
+.footer {
+  background-color: #72A0C1;
+}
+
+@media screen and (max-width: 480px) {
+  img {
+    width: 400px;
+    justify-content: center;
+  }
+  body {
+    display: flex;
+    justify-content: center;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    justify-items: center;
+    justify-content: space-evenly;
+  }
+  .header {
+    display: grid;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: start;
+  }
+  .contenido {
+    display: flex;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+  }
+  .grid {
+    display: grid;
+    flex-direction: column;
+    align-items: flex-start;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    grid-auto-flow: column;
+  }
+  .novedades {
+    visibility: hidden;
+  }
+  .buscador, .novedades {
+    visibility: hidden;
+  }
+  .footer {
+    display: grid;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: start;
+  }
+}
+body {
+  background-color: whitesmoke;
+  padding: 5px;
+  border: 10px;
+  display: inline-block;
+  font-family: "Jacques Francois", serif;
+  font-size: medium;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+body ul li {
+  font-family: "Jacques Francois", serif;
+  list-style-type: none;
+  display: inline-block;
+}
+body li a {
+  color: rgb(229, 219, 219);
+  border-style: double;
+}
+body div {
+  align-items: center;
+}
+body img {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: whitesmoke;
+  -o-border-image: 2px;
+     border-image: 2px;
+}
+
+.container {
+  font-family: "Jacques Francois", serif;
+}
+
+.contenido {
+  grid-area: contenido;
+  justify-items: center;
+  align-content: center;
+  background-color: whitesmoke;
+}
+
+.buscador, .novedades {
+  grid-area: buscador, novedades;
+  display: flexbox;
+  background: radial-gradient(rgb(61, 142, 112), rgb(138, 138, 198));
+  border-style: double;
+  justify-content: center;
+  align-items: center;
+}
+.buscador .navbar-light, .novedades .navbar-light {
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  grid-area: footer;
+  font-family: "Jacques Francois", serif;
+  border-style: double;
+}
+
+strong {
+  color: rgb(229, 219, 219);
+  font-family: "Jacques Francois", serif;
+}
+
+button {
+  background-color: rgb(178, 34, 34);
+  -webkit-text-decoration: solid;
+          text-decoration: solid;
+  border-radius: 4px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  transition: ease-out 0.3s;
+  -webkit-animation-name: button;
+          animation-name: button;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  margin-top: 6px;
+}
+@-webkit-keyframes button {
+  from {
+    background-color: rgb(178, 34, 34);
+  }
+  to {
+    background-color: rgb(42, 4, 53);
+  }
+}
+@keyframes button {
+  from {
+    background-color: rgb(178, 34, 34);
+  }
+  to {
+    background-color: rgb(42, 4, 53);
+  }
+}/*# sourceMappingURL=estilo.css.map */

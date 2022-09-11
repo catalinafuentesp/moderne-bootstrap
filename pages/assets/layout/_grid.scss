@@ -21,3 +21,12 @@
     "contenido contenido contenido none"
     "footer footer footer footer"
 }
+
+@mixin buscador-novedades {
+    grid-area: buscador,novedades;
+    display: flexbox;
+    background: $gradiente1;
+    border-style: double;
+    justify-content: center;
+    align-items: center;
+}

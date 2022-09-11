@@ -1,6 +1,8 @@
 @import "./variables/vars";
 @import "./layout/grid";
+@import "./layout/header-footer";
 @import "./layout/media";
+
 
 body {
     background-color: whitesmoke;
@@ -16,9 +18,16 @@ body {
 ul li {
     font-family: $FontMDRN;
     list-style-type: none;
-    display: inline-block
+    display: inline-block;
 }
 
+li 
+{
+    a {
+        color:rgb(229, 219, 219);
+        border-style: double;
+    }
+}
 div {
     align-items: center;
 }
@@ -34,23 +43,6 @@ img {
     font-family: $FontMDRN;
 }
 
-.header {
-    grid-area: header;
-    display: grid;
-    background: $gradiente2;
-    font-size: 30px;
-    border-style: double;
-}
-
-.novedades {
-    grid-area: novedades;
-    display: flexbox;
-    align-items: center;
-    background: $gradiente1;
-    border-style: double;
-
-}
-
 .contenido {
     grid-area: contenido;
     justify-items: center;
@@ -60,22 +52,21 @@ img {
 
 
 .buscador {
-    grid-area: buscador;
-    display: flexbox;
-    background: $gradiente1;
-    border-style: double;
-    justify-content: center;
-    align-items: center;
+    @include buscador-novedades ();
 
     .navbar-light {
         justify-content: center;
         align-items: center;
     }
+
+}
+
+.novedades {
+    @extend .buscador; 
 }
 
 .footer {
     grid-area: footer;
-    background-color: rgba(82, 124, 109, 1);
     font-family: $FontMDRN;
     border-style: double;
 }

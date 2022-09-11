@@ -1,0 +1,28 @@
+.header {
+    grid-area: header;
+    display: grid;
+    background:$gradiente2;
+    font-size: 30px;
+    border-style: double;
+
+}
+
+
+$botonesheader: 
+(
+caja-1: #72A0C1,
+caja-2: #72A0C1,
+caja-3: #72A0C1,
+caja-4: #72A0C1,
+caja-5: #72A0C1
+);
+
+@each $boton,$colorb in $botonesheader {
+    .cc#{$boton}
+    {background-color: $colorb;}
+
+}
+
+.footer {
+    background-color: map-get($map: $botonesheader , $key:caja-1);
+}

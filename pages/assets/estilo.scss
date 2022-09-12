@@ -39,9 +39,6 @@ img {
 
 }}
 
-.container {
-    font-family: $FontMDRN;
-}
 
 .contenido {
     grid-area: contenido;
@@ -65,11 +62,13 @@ img {
     @extend .buscador; 
 }
 
+
 .footer {
     grid-area: footer;
     font-family: $FontMDRN;
     border-style: double;
 }
+
 
 strong {
     color: rgb(229, 219, 219);

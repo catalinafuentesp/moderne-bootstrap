@@ -151,10 +151,6 @@ body img {
      border-image: 2px;
 }
 
-.container {
-  font-family: "Jacques Francois", serif;
-}
-
 .contenido {
   grid-area: contenido;
   justify-items: center;

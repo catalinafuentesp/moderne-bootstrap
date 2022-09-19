@@ -1,3 +1,72 @@
+.image {
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  position: relative;
+  width: 600px;
+  padding: 15px;
+  margin-left: 20%;
+  margin-bottom: 5%;
+}
+
+.image__img {
+  display: block;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  position: relative;
+}
+
+.image__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+  font-family: "Jacques Francois", serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+
+.image__overlay--blur {
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+
+.image__overlay > * {
+  transform: translateY(20px);
+  transition: transform 0.25s;
+}
+
+.image__overlay:hover {
+  opacity: 1;
+}
+
+.image__overlay:hover > * {
+  transform: translateY(0);
+}
+
+.image__title {
+  font-size: 2em;
+  font-weight: bold;
+  font-family: "Jacques Francois", serif;
+}
+
+.image__description {
+  font-size: 1em;
+  margin-top: 0.25em;
+  font-family: "Jacques Francois", serif;
+  padding-right: 2%;
+  padding-left: 2%;
+}
+
 * {
   margin: 5px;
   padding: 5px;
@@ -23,6 +92,9 @@
   background: linear-gradient(70deg, rgba(2, 70, 6, 0.92), rgb(61, 142, 112));
   font-size: 30px;
   border-style: double;
+  align-items: center;
+  justify-items: center;
+  padding-inline: 9%;
 }
 
 .cccaja-1 {
@@ -62,6 +134,19 @@
     width: fit-content;
     justify-items: center;
     justify-content: space-evenly;
+  }
+  .navbar-nav {
+    border-style: none;
+    background-color: none;
+    width: 300px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    align-items: flex-start;
+  }
+  .cccaja-1, .cccaja-2, .cccaja-3, .cccaja-4, .cccaja-5 {
+    background-color: transparent;
+    border-style: none;
   }
   .header {
     display: grid;
@@ -135,20 +220,34 @@ body ul li {
   list-style-type: none;
   display: inline-block;
 }
-body li a {
+body ol a {
+  font-family: "Jacques Francois", serif;
+  font-style: bold;
+  font-size: large;
+  color: rgb(123, 24, 123);
+}
+
+li a {
   color: rgb(229, 219, 219);
   border-style: double;
 }
-body div {
+
+div {
   align-items: center;
 }
-body img {
+
+img {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   background-color: whitesmoke;
   -o-border-image: 2px;
      border-image: 2px;
+}
+
+.tarjetaFAQ {
+  padding-left: 27%;
+  padding-top: 3%;
 }
 
 .contenido {
@@ -182,7 +281,7 @@ strong {
   font-family: "Jacques Francois", serif;
 }
 
-button {
+.btn {
   background-color: rgb(178, 34, 34);
   -webkit-text-decoration: solid;
           text-decoration: solid;
@@ -191,15 +290,15 @@ button {
   align-items: center;
   justify-content: center;
   transition: ease-out 0.3s;
-  -webkit-animation-name: button;
-          animation-name: button;
+  -webkit-animation-name: btn;
+          animation-name: btn;
   -webkit-animation-duration: 0.5s;
           animation-duration: 0.5s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
   margin-top: 6px;
 }
-@-webkit-keyframes button {
+@-webkit-keyframes btn {
   from {
     background-color: rgb(178, 34, 34);
   }
@@ -207,7 +306,7 @@ button {
     background-color: rgb(42, 4, 53);
   }
 }
-@keyframes button {
+@keyframes btn {
   from {
     background-color: rgb(178, 34, 34);
   }

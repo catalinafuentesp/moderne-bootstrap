@@ -21,6 +21,17 @@ ul li {
     display: inline-block;
 }
 
+ol {
+    a {
+    font-family: $FontMDRN; 
+    font-style: bold;
+font-size: large;
+color: rgb(123, 24, 123);
+
+}
+}
+}
+
 li 
 {
     a {
@@ -37,7 +48,12 @@ img {
     background-color: whitesmoke;
     border-image: 2px;
 
-}}
+}
+
+.tarjetaFAQ {
+    padding-left: 27%;
+    padding-top: 3%;
+} 
 
 
 .contenido {
@@ -75,7 +91,7 @@ strong {
     font-family: $FontMDRN;
 }
 
-button {
+ .btn {
     background-color: rgb(178, 34, 34);
     text-decoration: solid;
     border-radius: 4px;
@@ -83,12 +99,12 @@ button {
     align-items: center;
     justify-content: center;
     transition: ease-out 0.3s;
-    animation-name: button;
+    animation-name: btn;
     animation-duration: 0.5s;
     animation-iteration-count: infinite;
     margin-top: 6px;
 
-    @keyframes button {
+    @keyframes btn {
         from {
             background-color: rgb(178, 34, 34)
         }

@@ -8,7 +8,24 @@
         width: fit-content;
         justify-items: center;
         justify-content: space-evenly;
+       
+    
     }
+
+.navbar-nav {
+    border-style: none;
+    background-color: none;
+    width: 300px;
+    height: fit-content; 
+    align-items: flex-start;
+
+}
+
+.cccaja-1, .cccaja-2, .cccaja-3, .cccaja-4, .cccaja-5 {
+    background-color: transparent;
+    border-style: none;
+}
+
 
     
     .header {

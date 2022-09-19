@@ -17,85 +17,117 @@
 
 <body>
   <section class="grid">
- <header class="header">
-    <p><strong> CONTACTO - MODERNE</strong></p>
-    <ul>
-      <li> <a class="cccaja-1" href="../index.html"> Inicio </a></li>
-      <li> <a class="cccaja-2" href="./Nosotros.html"> Nosotros</a> </li>
-      <li> <a class="cccaja-3" href="./publica-tu-arte.html"> Publica tu arte</a> </li>
-      <li> <a class="cccaja-4" href="./FAQ.html"> FAQ </a> </li>
-      <li> <a class="cccaja-5" href="./contacto.html"> Contacto</a> </li>
-    </ul>
-  </header>
+    <header class="header">
+      <p><strong> CONTACTO - MODERNE</strong></p>
+      <nav class="navbar navbar-expand-lg bg-transparent">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link, cccaja-1" href="../index.html"> Inicio </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link, cccaja-2" href="./Nosotros.html"> Nosotros </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link, cccaja-3" href="./FAQ.html"> FAQ </a>
+              </li>
+                <li class="nav-item">
+                  <a class="nav-link, cccaja-4" href="./publica-tu-arte.html"> Publica tu arte </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active, cccaja-5" aria-current="page" href="./contacto.html"> Contacto </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
 
 
-  <nav class="contenido">
-    <h1> ¡Conversemos! </h1>
-    <form action="nombre">
-      <div class="input-group">
-        <span class="input-group-text"> Nombre y apellido </span>
-        <input type="text" aria-label="nombre" class="form-control">
-        <input type="text" aria-label="apellido" class="form-control">
-      </div>
+    <main class="contenido">
+      <h1> ¡Conversemos! </h1>
+      <form action="nombre">
+        <div class="input-group">
+          <span class="input-group-text"> Nombre y apellido </span>
+          <input type="text" aria-label="nombre" class="form-control">
+          <input type="text" aria-label="apellido" class="form-control">
+        </div>
 
-      <select class="form-select" aria-label="Default select example">
-        <option selected>¿Eres artista o comprador/a?</option>
-        <option value="1">Artista</option>
-        <option value="2">Comprador/a</option>
-      </select>
-    </form>
-
-    <div class="form-floating">
-      <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
-      <label for="floatingTextarea">¿Qué podemos hacer por ti en MODERNE?</label>
-    </div>
-
-    <div class="form-check">
-      <legend>¿Quieres suscribirte a nuestro newsletter?</legend>
-      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-      <label class="form-check-label" for="flexRadioDefault1"> Sí </label>
-    </div>
-
-    <div class="form-check">
-      <label class="form-check-label" for="flexRadioDefault2"> No </label>
-      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-    </div>
-
-
-    <legend>Si dijiste que sí ¡muchas gracias y no olvides dejarnos tu correo!</legend>
-    <form>
-      <div>
-        <label for="exampleInputEmail1" class="form-label"> Deja aquí tu correo</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-        <div id="emailHelp" class="form-text"> No compartiremos tu correo con nadie. </div>
-      </div>
-    </form>
-
-  </nav class="contenido">
-
-  <div class="buscador">
-    <p><strong> BUSCADOR</strong></p>
-    <nav class="navbar-light">
-      <form class="form-inline">
-        <input class="form-control" type="search" placeholder="¿Qué te trae por aquí?" aria-label="search">
-        <br>
-        <button type="submit" class="btn"> <strong> busca </strong></button>
+        <select class="form-select" aria-label="Default select example">
+          <option selected>¿Eres artista o comprador/a?</option>
+          <option value="1">Artista</option>
+          <option value="2">Comprador/a</option>
+        </select>
       </form>
-    </nav>
-  </div>
 
-  <div class="novedades">
-    <p><strong> NOVEDADES </strong></p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et magni temporibus rem expedita ipsa aut ducimus
-      iste, architecto similique tempore vel debitis molestiae culpa cum? Dolore at magnam libero ex?</p>
-  </div>
+      <div class="form-floating">
+        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+        <label for="floatingTextarea">¿Qué podemos hacer por ti en MODERNE?</label>
+      </div>
 
-  <footer class="footer">
-    <marquee>Catalina Fuentes - Coderhouse </marquee>
-  </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-    crossorigin="anonymous"></script>
-</section>
+      <div class="form-check">
+        <legend>¿Quieres suscribirte a nuestro newsletter?</legend>
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+        <label class="form-check-label" for="flexRadioDefault1"> Sí </label>
+      </div>
+
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+        <label class="form-check-label" for="flexRadioDefault2"> No </label>
+      </div>
+
+
+      <legend>Si dijiste que sí ¡muchas gracias y no olvides dejarnos tu correo!</legend>
+      <form>
+        <div>
+          <label for="exampleInputEmail1" class="form-label"> Deja aquí tu correo</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text"> No compartiremos tu correo con nadie. </div>
+        </div>
+      </form>
+      <input class="btn btn-primary" type="submit" value="Enviar!">
+    </main>
+
+    <aside class="buscador">
+      <p><strong> BUSCADOR</strong></p>
+      <nav class="navbar-light">
+          <form class="form-inline">
+              <input class="form-control" type="search" placeholder="¿Qué te trae por aquí?" aria-label="search">
+              <br>
+              <button type="submit" class="btn"> <strong> busca </strong></button>
+          </form>
+      </nav>
+  </aside>
+
+    <article class="novedades">
+      <p><strong> NOVEDADES EN EL MUNDO DEL ARTE </strong></p>
+      <ol> <a href="https://tinyurl.com/4t466apx">
+          Cuadro generado por inteligencia artificial gana premio y desata polémica en el mundo del arte</a> </ol>
+      <ol> <a href="https://tinyurl.com/7dhseufd"> Elisa Avendaño gana el Premio Nacional de las Artes Musicales </a>
+      </ol>
+      <ol> <a href="https://tinyurl.com/yryxa7s3">Muestra itinerante de la 34ª Bienal de São Paulo llega al Centro
+          Nacional de Arte Contemporáneo </a>
+      </ol>
+      <ol>
+        <a href="https://tinyurl.com/5ev9sset">"Diego y yo" de Frida Kahlo, la obra más cara del arte latinoamericano,
+          se presenta en el Malba de Argentina
+        </a>
+      </ol>
+</article>
+
+
+
+    <footer class="footer">
+      <marquee>Catalina Fuentes - Coderhouse </marquee>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"></script>
+  </section>
 </body>
+
 </html>

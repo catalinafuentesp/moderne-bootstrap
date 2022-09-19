@@ -1,3 +1,75 @@
 $FontMDRN: 'Jacques Francois', serif; 
 $gradiente1: radial-gradient(rgb(61, 142, 112), rgb(138, 138, 198));
 $gradiente2: linear-gradient(70deg,rgba(2, 70, 6, 0.92),rgb(61, 142, 112));
+
+.image {
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    position: relative;
+    width: 600px;
+    padding: 15px; 
+    margin-left: 20%;
+    margin-bottom: 5%;
+    
+   }
+  
+  .image__img {
+    display: block;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    position: relative;
+  }
+  
+  .image__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    font-family: $FontMDRN;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+  }
+  
+  .image__overlay--blur {
+    backdrop-filter: blur(5px);
+  }
+  
+  
+  .image__overlay > * {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+  }
+  
+  .image__overlay:hover {
+    opacity: 1;
+  }
+  
+  .image__overlay:hover > * {
+    transform: translateY(0);
+  }
+  
+  .image__title {
+    font-size: 2em;
+    font-weight: bold;
+    font-family:$FontMDRN;
+
+  }
+  
+  .image__description {
+    font-size: 1em;
+    margin-top: 0.25em;
+    font-family:$FontMDRN;
+    padding-right: 2%;
+    padding-left: 2%;
+  }
+  

@@ -17,48 +17,101 @@
 
 <body>
   <section class="grid">
-      <header class="header">
-        <p><strong> NOSOTROS - MODERNE</strong></p>
-      <ul>
-        <li> <a class="cccaja-1" href="../index.html"> Inicio </a></li>
-        <li> <a class="cccaja-2" href="./Nosotros.html"> Nosotros</a> </li>
-        <li> <a class="cccaja-3" href="./publica-tu-arte.html"> Publica tu arte</a> </li>
-        <li> <a class="cccaja-4" href="./FAQ.html"> FAQ </a> </li>
-        <li> <a class="cccaja-5" href="./contacto.html"> Contacto</a> </li>
-      </ul>
-      </header>
+    <header class="header">
+      <p><strong> NOSOTROS - MODERNE</strong></p>
+      <nav class="navbar navbar-expand-lg bg-transparent">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link, cccaja-1" href="../index.html"> Inicio </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active, cccaja-2" aria-current="page" href="./nosotros.html"> Nosotros </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link, cccaja-3" href="./FAQ.html"> FAQ </a>
+              </li>
+                <li class="nav-item">
+                  <a class="nav-link, cccaja-4" href="./publica-tu-arte.html"> Publica tu arte </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link, cccaja-5" href="./contacto.html"> Contacto </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
 
-    <div class="buscador">
+    <aside class="buscador">
       <p><strong> BUSCADOR</strong></p>
       <nav class="navbar-light">
-        <form class="form-inline">
-          <input class="form-control" type="search" placeholder="¿Qué te trae por aquí?" aria-label="search">
-          <br>
-          <button type="submit" class="btn"> <strong> busca </strong></button>
-        </form>
+          <form class="form-inline">
+              <input class="form-control" type="search" placeholder="¿Qué te trae por aquí?" aria-label="search">
+              <br>
+              <button type="submit" class="btn"> <strong> busca </strong></button>
+          </form>
       </nav>
-    </div>
+  </aside>
 
-    <div class="novedades">
-      <p><strong> NOVEDADES </strong></p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et magni temporibus rem expedita ipsa aut ducimus
-        iste, architecto similique tempore vel debitis molestiae culpa cum? Dolore at magnam libero ex?</p>
-    </div>
-    <nav class="contenido">
-      
-        <h1>Este es nuestro equipo</h1>
-      
-      <img
-        src="https://media.istockphoto.com/photos/confident-businesswoman-at-hotel-picture-id1192055634?b=1&k=20&m=1192055634&s=170667a&w=0&h=ZuJc9rdrr8cNrnPDydXk5wnlqwobWyeWtidwphcP67g="
-        alt="retrato de una mujer de mediana edad">
+    <article class="novedades">
+      <p><strong> NOVEDADES EN EL MUNDO DEL ARTE </strong></p>
+      <ol> <a href="https://tinyurl.com/4t466apx">
+          Cuadro generado por inteligencia artificial gana premio y desata polémica en el mundo del arte</a> </ol>
+      <ol> <a href="https://tinyurl.com/7dhseufd"> Elisa Avendaño gana el Premio Nacional de las Artes Musicales </a>
+      </ol>
+      <ol> <a href="https://tinyurl.com/yryxa7s3">Muestra itinerante de la 34ª Bienal de São Paulo llega al Centro
+          Nacional de Arte Contemporáneo </a>
+      </ol>
+      <ol>
+        <a href="https://tinyurl.com/5ev9sset">"Diego y yo" de Frida Kahlo, la obra más cara del arte latinoamericano,
+          se presenta en el Malba de Argentina
+        </a>
+      </ol>
+    </article>
 
-      <p>Valentina Cruz - Directora</p>
+    <main class="contenido">
 
-      <img
-        src="https://media.istockphoto.com/photos/portrait-smiling-african-american-businessman-in-blue-suit-sit-at-picture-id1341347262?k=20&m=1341347262&s=170667a&w=0&h=TN0UMI0Jxvl2oFDlTh4cxukUTbYoCQSOi-RLiYg7SU4="
-        alt="retrato de hombre de mediana edad">
-      <p>Joaquín Rodriguez - Informática </p>
-    </nav>
+      <h1>Este es nuestro equipo</h1>
+
+      <div class="image">
+        <img class="image__img" src="https://tinyurl.com/4cw2jweu" alt="mujer de mediana edad de pie">
+        <div class="image__overlay image__overlay--primary">
+          <div class="image__title">Valentina Cruz</div>
+          <p class="image__description">
+            Valentina es la directora de nuestro equipo y creadora de MODERNE. Un día Valentina quiso hacer más simple la
+             relación entre artistas y aficionados, por lo que pensó en una plataforma que hiciera esta unión accesible a todo público. 
+          </p>
+        </div>
+      </div>
+
+      <div class="image">
+        <img class="image__img" src="https://tinyurl.com/s424utby" alt="hombre de mediana edad usando un traje">
+        <div class="image__overlay image__overlay--primary">
+          <div class="image__title">Joaquín Rodríguez</div>
+          <p class="image__description">
+          Joaquín es parte de nuestro equipo de informática y hace que esta página web sea posible, buscando nuevas maneras de hacer que MODERNE pueda servir como una herramienta para
+          artistas en busca de un espacio. 
+          </p>
+        </div>
+      </div>
+
+
+      <div class="image">
+        <img class="image__img" src="https://tinyurl.com/2p845n5d" alt="mujer de mediana edad usando una blusa blanca">
+        <div class="image__overlay image__overlay--primary">
+          <div class="image__title"> Ángela Freire </div>
+          <p class="image__description">
+            Ángela es nuestra gestora administrativa, a cargo de las comunicaciones y recursos humanos en nuestro equipo. 
+            Ángela es una apasionada por el arte, viéndolo como un medio de expresión para comunicar un mensaje y plantear preguntas.  </p>
+        </div>
+      </div>
+    </main>
+
 
     <footer class="footer">
       <marquee>Catalina Fuentes - Coderhouse </marquee>
@@ -68,4 +121,5 @@
       crossorigin="anonymous"></script>
   </section>
 </body>
+
 </html>

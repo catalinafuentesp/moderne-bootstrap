@@ -121,86 +121,6 @@
   background-color: #72A0C1;
 }
 
-@media screen and (max-width: 480px) {
-  img {
-    width: 400px;
-    justify-content: center;
-  }
-  body {
-    display: flex;
-    justify-content: center;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    justify-items: center;
-    justify-content: space-evenly;
-  }
-  .navbar-nav {
-    border-style: none;
-    background-color: none;
-    width: 300px;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-    align-items: flex-start;
-  }
-  .cccaja-1, .cccaja-2, .cccaja-3, .cccaja-4, .cccaja-5 {
-    background-color: transparent;
-    border-style: none;
-  }
-  .header {
-    display: grid;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-    flex-direction: column;
-    align-items: flex-start;
-    text-align: start;
-  }
-  .contenido {
-    display: flex;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-    justify-content: space-evenly;
-    flex-direction: column;
-    align-items: center;
-    text-align: justify;
-  }
-  .grid {
-    display: grid;
-    flex-direction: column;
-    align-items: flex-start;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    grid-auto-flow: column;
-  }
-  .novedades {
-    visibility: hidden;
-  }
-  .buscador, .novedades {
-    visibility: hidden;
-  }
-  .footer {
-    display: grid;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-    flex-direction: column;
-    align-items: flex-start;
-    text-align: start;
-  }
-}
 body {
   background-color: whitesmoke;
   padding: 5px;
@@ -236,6 +156,25 @@ div {
   align-items: center;
 }
 
+h1 {
+  margin-top: 3%;
+}
+
+.form-check {
+  text-align: left;
+}
+
+.carousel {
+  width: 550px;
+  height: 470px;
+  margin-left: 20%;
+  margin-top: 5%;
+}
+
+h5 {
+  background: radial-gradient(rgb(61, 142, 112), rgb(138, 138, 198));
+}
+
 img {
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -253,6 +192,7 @@ img {
 .contenido {
   grid-area: contenido;
   justify-items: center;
+  margin-top: 3%;
   align-content: center;
   background-color: whitesmoke;
 }
@@ -274,6 +214,14 @@ img {
   grid-area: footer;
   font-family: "Jacques Francois", serif;
   border-style: double;
+}
+.footer .fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.footer .fa-instagram {
+  background: #E1306C;
+  color: white;
 }
 
 strong {
@@ -312,5 +260,109 @@ strong {
   }
   to {
     background-color: rgb(42, 4, 53);
+  }
+}
+
+/** media queries **/
+@media only screen and (max-width: 480px) {
+  header {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0;
+    padding: 0%;
+    border-style: none;
+    border-radius: 0%;
+  }
+  header .navbar-nav {
+    border-style: none;
+    background-color: none;
+    width: 7em;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    align-items: flex-start;
+  }
+  header .cccaja-1, header .cccaja-2, header .cccaja-3, header .cccaja-4, header .cccaja-5 {
+    background-color: transparent;
+    border-style: none;
+    font-size: 0.8em;
+    align-content: center;
+  }
+  body, html {
+    height: 100%;
+    width: 100vh;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  h1 {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2em;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+  .carousel {
+    width: 350px;
+    height: 170px;
+    margin-left: 2%;
+    margin-top: 5%;
+  }
+  .form-floating {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    text-align: center;
+  }
+  .form-control {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    text-align: center;
+  }
+  img, .image {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    justify-items: flex-start;
+    padding: 0, 0, 0, 0;
+    height: 300px;
+    width: 330px;
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+  .card, .tarjetaFAQ {
+    width: 330px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    justify-items: left;
+    padding-left: 2%;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    padding: 0, 0, 0, 0;
+    margin: auto;
+    justify-content: center;
+  }
+  .novedades {
+    visibility: hidden;
+  }
+  .buscador, .novedades {
+    visibility: hidden;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1%;
+  }
+  .footer .fa {
+    background: none;
   }
 }/*# sourceMappingURL=estilo.css.map */
